@@ -1,11 +1,11 @@
 # 說了算 NoTypeGood
 
-macOS 語音輸入：按住觸發鍵說話，放開後文字即輸入至游標所在位置。語音辨識與文字整理皆在本機完成。
+macOS 語音輸入：本機辨識與整理，支援繁體中文、簡體中文與英文（中英混合也可以）。免費軟體（保留所有權利，不公開原始碼）。
 
-- 系統需求：macOS 26 或更新版本，搭載 Apple 晶片的 Mac
-- 下載：請至 [Releases](https://github.com/Cerry0524/NoTypeGood-releases/releases) 下載最新的 `.pkg` 安裝檔（Apple 公證）
-- 首次啟動會下載約 4 GB 的語音辨識與文字整理模型
+- 下載頁：https://cerry0524.github.io/NoTypeGood-releases/
+- 最新版本：[2.1.0](https://github.com/Cerry0524/NoTypeGood-releases/releases/download/v2.1.0/NoTypeGood-2.1.0.pkg)（需要 macOS 26 以上、Apple 晶片）
+- 所有版本與更新內容：[Releases](https://github.com/Cerry0524/NoTypeGood-releases/releases)
 
-這個 repo 只用於發行安裝檔與下載頁，不含原始碼。
+這個 repo 只放安裝程式（GitHub Releases）與下載頁，不含原始碼。app 內的「自動檢查更新」只連到這個 repo 的 Releases API，不傳送任何使用資料；可以在「設定 › 一般」關閉。
 
-NoTypeGood 為免費軟體，© 2026 KO-JUI CHEN，保留所有權利。第三方元件與模型的授權列於 app 內「設定 › 關於」。
+© 2026 KO-JUI CHEN

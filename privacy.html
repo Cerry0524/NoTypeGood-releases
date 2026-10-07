@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>隱私說明・說了算 NoTypeGood</title>
+<meta name="description" content="隱私說明">
+<style>
+:root { color-scheme: light dark; --paper:#F6F3EE; --surface:#FFFFFF; --rule:#E2DCD2; --ink:#1E1C19; --ink2:#4A453F; --accent:#B8402A; --onAccent:#FFFFFF; --sunken:#EEEAE3; }
+@media (prefers-color-scheme: dark) { :root { --paper:#191816; --surface:#22201D; --rule:#35322D; --ink:#EDE8E0; --ink2:#B3ADA2; --accent:#C84B33; --sunken:#121110; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif; }
+a { color: var(--accent); text-underline-offset: 3px; }
+.song { font-family: "Songti TC", "STSong", "Noto Serif TC", serif; font-weight: 600; }
+.wrap { width: min(720px, 100% - 32px); margin: 0 auto; }
+header.hero { text-align: center; padding: 64px 0 28px; }
+.seal { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 6px; background: var(--accent); color: var(--paper); font-size: 30px; transform: rotate(-2deg); margin-bottom: 18px; }
+h1 { margin: 0; font-size: clamp(30px, 6vw, 44px); line-height: 1.25; }
+.lead { margin: 12px auto 0; max-width: 34em; color: var(--ink2); }
+.actions { margin-top: 26px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 11px 22px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 500; }
+.btn.prom { background: var(--accent); border-color: var(--accent); color: var(--onAccent); }
+.btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.small { font-size: 14px; color: var(--ink2); }
+.scene { height: 220px; overflow: hidden; margin-top: 36px; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 38%); mask-image: linear-gradient(to bottom, transparent 0, #000 38%); }
+.scene svg { display: block; width: 100%; height: 100%; }
+.scene .dark { display: none; }
+@media (prefers-color-scheme: dark) { .scene .light { display: none; } .scene .dark { display: block; } }
+.points { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 32px 0; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; }
+.card b { display: block; margin-bottom: 4px; }
+.card span { color: var(--ink2); font-size: 15px; }
+section.notes { margin: 40px 0; }
+section.notes h2, main h2 { font-size: 22px; margin: 0 0 12px; }
+.release { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; }
+.release h3 { margin: 0 0 6px; font-size: 17px; }
+.release h3 time { margin-left: 10px; font-weight: 400; font-size: 14px; color: var(--ink2); }
+.release ul { margin: 6px 0 0; padding-left: 1.2em; }
+.release li { margin: 2px 0; }
+footer { border-top: 1px solid var(--rule); padding: 20px 0 48px; text-align: center; }
+main.doc { padding: 40px 0 24px; }
+main.doc h2 { margin-top: 28px; }
+main.doc code, main.doc pre { background: var(--sunken); border-radius: 6px; }
+main.doc code { padding: 1px 5px; font-size: 14px; word-break: break-word; }
+main.doc pre { padding: 12px; overflow-x: auto; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+@media (max-width: 480px) { header.hero { padding-top: 44px; } }
+</style>
+</head>
+<body>
+<main class="wrap doc"><p><a href="./">← 說了算 NoTypeGood</a></p><h3>說了算 NoTypeGood 2</h3>
+<p>語音與文字只在這台 Mac 上處理，沒有分析、廣告、帳號或遙測。<strong>只在下載模型與檢查更新時連線。</strong></p>
+<h4>連線</h4>
+<ul><li><strong>下載模型</strong>：按下「下載並驗證」（或模型「更新」）之後，只連到隨 app 的 <code>models.json</code> 列出的 Hugging Face 網址；每個檔案都以固定的版本（revision）、位元組數與 SHA-256 驗證，不符就刪除重下。</li><li><strong>檢查更新</strong>：預設開啟，可在「設定 › 一般」關閉。每天最多一次，只連到一個固定網址：GitHub 公開 repo <code>Cerry0524/NoTypeGood-releases</code> 的 Releases API（<code>https://api.github.com/repos/Cerry0524/NoTypeGood-releases/releases/latest</code>）。請求不帶 cookie，也不傳送任何使用資料或識別碼（目前的版本號只在本機和回應比對）。</li><li><strong>下載新版</strong>：只有你按下「下載並安裝」才會進行，只下載同一個公開 repo 的安裝程式，存到「下載項目」；開啟安裝程式前會驗證它是 Team 3PM99X2THU 的 Developer ID 簽章、而且已通過 Apple 公證，驗證失敗就刪除。</li><li>整理文字的自訂端點只允許本機（loopback）位址。</li></ul>
+<h4>資料</h4>
+<ul><li>麥克風音訊在記憶體中處理，不寫到磁碟（診斷音檔預設關閉）。</li><li>聽寫紀錄、詞庫、情境與風格存在這台 Mac 的 <code>~/Library/Application Support/NoTypeGood/</code>；紀錄保留期限可在「設定 › 隱私」調整，也可以隨時清除。</li><li>備份檔（<code>.ntgbackup</code>）由你儲存在自己選的位置，內容是詞庫、情境、風格與設定；不含聽寫紀錄與模型。</li><li>「匯出診斷資訊」產生的 .zip 只包含版本、macOS 與 Mac 型號、模型與權限狀態、最近 200 筆事件的時間／耗時／引擎／錯誤代碼；<strong>不含任何聽寫的文字與聲音、詞庫內容、視窗標題</strong>。由你自行寄出，app 不會上傳。</li><li>「移除 NoTypeGood」把 app、模型與資料移到垃圾桶，不直接刪除。</li></ul>
+<h4>權限</h4>
+<ul><li>麥克風：錄下你按住觸發鍵說的那一段話。</li><li>輔助使用與輸入監控：偵測觸發鍵，並把完成的文字貼到你正在使用的 app。密碼欄位不收音、不插入。</li></ul></main>
+<footer><div class="wrap small">免費軟體・© 2026 KO-JUI CHEN・<a href="privacy.html">隱私說明</a>・<a href="licenses.html">第三方授權</a>・<a href="https://github.com/Cerry0524/NoTypeGood-releases/releases">所有版本</a></div></footer>
+</body>
+</html>
